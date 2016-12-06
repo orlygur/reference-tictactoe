@@ -27,6 +27,9 @@ npm install -g create-react-app
 
 Install and run postgres docker image for development.
 ```
+For ubuntu VM, make sure that postgreSQL is not running / not using port 5432 by;
+sudo /etc/init.d/postgresql stop (status)
+
 docker run -p 5432:5432 --name pg2 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
 ```
 
